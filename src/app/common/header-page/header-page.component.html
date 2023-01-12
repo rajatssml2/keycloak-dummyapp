@@ -1,0 +1,399 @@
+<div id="topbar" style="height: 30px; background: #01458e;" class="d-none d-lg-flex  align-items-center fixed-top main-bar header-middle"
+  [ngClass]="{'topbar-scrolled' : isSticky}">
+  <div class="container" style="padding-top: 3px;">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="wt-topbar-right clearfix">
+          <ul class="social-bx list-inline pull-left">
+            <li><a href="#main-content" style="text-decoration: underline !important;    color: white !important;">Skip to Main Content</a></li>
+            <li>|</li>
+            <li class="textsize dropdown">
+              <a id="pt1:cl2" class="x24u xfe" onclick="return false;" href="#" style="color: white !important;">Screen Reader</a>
+              
+            </li>
+            <li>|</li>
+            <li>
+              <a id="pt1:pt_cl1" class="x24u xfe" onclick="return false;" href="#" style="color: white !important;">A-</a>
+            </li>
+            <li>|</li>
+            <li>
+              <a id="pt1:pt_cl1" class="x24u xfe" onclick="return false;" href="#" style="color: white !important;">A</a>
+            </li>
+            <li>|</li>
+            <li>
+              <a id="pt1:pt_cl1" class="x24u xfe" onclick="return false;" href="#" style="color: white !important;">A+</a>
+            </li>
+            <li>|</li>
+            <li class="lang dropdown"><a href="javascript:void(0);" style="text-decoration: underline !important;    color: white !important;">Language</a>
+              <ul class="dropdown-menu">
+                <li><a href="/">English</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="contact-info mr-auto">
+    </div>
+
+    
+    <!-- <div class="social-links">
+      <a href="http://finance.assam.gov.in" target="_blank" rel="noopener noreferrer" class="website"><i class="icofont-web"></i></a> 
+      <a href="https://twitter.com/AssamFinDept" target="_blank" rel="noopener noreferrer" class="twitter"><i class="icofont-twitter"></i></a> 
+      <a href="https://facebook.com/AssamFinanceDepartment" target="_blank" rel="noopener noreferrer" class="facebook"><i class="icofont-facebook"></i></a> 
+      <a href="https://instagram.com/assamfinancedepartment" target="_blank" rel="noopener noreferrer" class="instagram"><i class="icofont-instagram"></i></a> 
+      <a href="https://youtube.com/channel/UCNmQmNJR2F-rxQOyNXGMkDg/featured" target="_blank" rel="noopener noreferrer" class="youtube"><i class="icofont-youtube"></i></a> 
+        
+    </div> -->
+  </div>
+</div>
+
+<div id="topbar" style="margin-top: 30px;" class="d-none d-lg-flex  align-items-center fixed-top main-bar header-middle"
+  [ngClass]="{'topbar-scrolled' : isSticky}">
+  <!-- <div class="container d-flex">
+    <div class="contact-info mr-auto">
+      <i class="icofont-envelope"></i> <a href="mailto:egu.finassam@gmail.com">egu.finassam@gmail.com</a> <i class="icofont-phone"></i> 1800 120 6388
+    </div>
+    <div class="social-links">
+      <a href="http://finance.assam.gov.in" target="_blank" rel="noopener noreferrer" class="website"><i class="icofont-web"></i></a> 
+      <a href="https://twitter.com/AssamFinDept" target="_blank" rel="noopener noreferrer" class="twitter"><i class="icofont-twitter"></i></a> 
+      <a href="https://facebook.com/AssamFinanceDepartment" target="_blank" rel="noopener noreferrer" class="facebook"><i class="icofont-facebook"></i></a> 
+      <a href="https://instagram.com/assamfinancedepartment" target="_blank" rel="noopener noreferrer" class="instagram"><i class="icofont-instagram"></i></a> 
+      <a href="https://youtube.com/channel/UCNmQmNJR2F-rxQOyNXGMkDg/featured" target="_blank" rel="noopener noreferrer" class="youtube"><i class="icofont-youtube"></i></a> 
+        
+    </div>
+  </div> -->
+  <div class="container">
+
+    <h1 class="logo">
+      <!-- <a class="main_gov brown-text" target="_blank" href="http://assam.gov.in">E- Vidya Vahini</a> -->
+      <!-- <a class="sub_dept" href="https://pwdroads.assam.gov.in/">PWRD</a> -->
+    </h1>
+    <!-- <div class="logo-header">
+      <a href="javascript:void(0)">
+        <div class="logo">
+          <img class="national_emblem" src="../../../assets/images/assam_pwd_logo.jpg" alt="national emblem">
+          
+        </div>
+      </a>
+    </div> -->
+    <div class="header-info">
+      <ul style="padding-left: 0;">
+        <li *ngIf="loginUser=='morth_manager'">
+          <a [routerLink]="'analytic/analytic-home'" target="_blank" rel="noopener noreferrer">
+            <img style="height: 70px; width: 150px;" title="analytic"
+              src="../../../assets/images/analytics-dashboard.png"></a>
+        </li>
+        <!-- <li>
+          <a [routerLink]="'dashboard-analytic'" target="_blank" rel="noopener noreferrer">
+            <img style="height: 70px; width: 70px;" title="dashboard" src="../../../assets/images/dashboard2.png"></a>
+        </li> -->
+        <!-- <li style="padding: 0;">
+          <a target="_blank" href="http://gandhi.gov.in/" rel="noopener noreferrer">
+            <img title="" src="../../../assets/images/assam_pwd_logo.png" style="width: 75%;">
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</div>
+<header id="header" class="fixed-top" [ngClass]="{'header-scrolled' : isSticky}">
+
+
+  <div class="sticky-wrapper container d-flex align-items-center" [ngStyle]="{'height': isSticky ? '55px' : '' }">
+    <!-- <div class="sticky-header" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}"> -->
+    <a class="mr-auto" [ngStyle]="{'display': isSticky ? 'none' : 'block' }">
+      <img src="" alt="">
+    </a>
+    <h1 class="mr-auto" [ngClass]="{'logo2': isSticky}" [ngStyle]="{'display': isSticky ? 'block' : 'none' }">
+      <!-- <a class="main_gov brown-text" target="_blank" href="http://assam.gov.in">Government Of Assam</a>
+      <a class="sub_dept" href="https://pwdroads.assam.gov.in/">PWRD</a> -->
+    </h1>
+    <!-- <a href="index.html" class="logo2 mr-auto" [ngClass]="{'logo2': isSticky}"> 
+
+        </a> -->
+    <nav class="nav-menu d-none d-lg-block nav-itm-l" id="nav-itm-l" style="margin-left: -30px;">
+      <ul class="">
+        <li *ngIf="isLoggedIn=='true'" class="active"><a [routerLink]="['/dashboard']" class="nav-link px-2">Home</a>
+        </li>
+        <li id="home1" *ngIf="isLoggedIn!=='true'" class="home active" (click)="goToHome()"><a [routerLink]="['/']"
+            class="nav-link px-2">Home</a></li>
+        <li id="modules1" (click)="goToModule()" class="modules" *ngIf="isLoggedIn!=='true'"><a [routerLink]="['/']"
+            class="nav-link px-2">Modules</a></li>
+        <li id="contact-us" (click)="goToContactUs()" *ngIf="isLoggedIn!=='true'" class="contact"><a
+            [routerLink]="['/']" class="nav-link px-2">Contact us</a></li>
+        <!-- <li *ngIf="isLoggedIn!=='true'"><a [routerLink]="['']" class="nav-link px-2 ">Greivance Redressal System</a></li>
+            <li *ngIf="isLoggedIn!=='true' && currentUrl =='/innovation-lab'"><a [routerLink]="['dashboard-analytic']" class="nav-link px-2 ">My Dashboard</a></li> -->
+        <!-- <li><a href="#" class="nav-link px-2 ">About us</a></li>
+                <li><a href="#" class="nav-link px-2 ">Contact us</a></li> -->
+        <li *ngIf="isLoggedIn=='true' && (loginUser=='Executive Engineer' || loginUser=='Chief Engineer')"
+          class="drop-down">
+          <a href="javascript:void(0);" class="dropdown-toggle">DPR & Package</a>
+          <ul style="width: 385%;" *ngIf="loginUser=='Executive Engineer' || loginUser=='Chief Engineer'">
+            <div class="row">
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Create Of Road Priority List</a></li>
+                <li><a class="dropdown-item">Modify Of Road Priority List</a></li>
+                <li><a class="dropdown-item">View Of Road Priority List</a></li>
+                <li><a class="dropdown-item">Create New DPR</a></li>
+                <li><a class="dropdown-item">Search DPR/Package</a></li>
+                <li><a class="dropdown-item">Create Non-Scheduled Items</a></li>
+              </div>
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">View Schedule of Rates</a></li>
+                <li><a class="dropdown-item">Create New Road</a></li>
+                <li><a class="dropdown-item">View Road Information</a></li>
+                <li><a class="dropdown-item">Prepare Package</a></li>
+                <li><a class="dropdown-item">Report - DPR/Package Status Tracking</a></li>
+                <li><a class="dropdown-item">Revise/Revalidate AA</a></li>
+              </div>
+            </div>
+
+
+            <!-- <li class="drop-down">
+                      <a href="gotoInYearBudgetExecution" title="In-year Budget Execution Report">
+                        <i class="glyphicon glyphicon-chevron-right"></i> In-year Budget Execution
+                      </a>
+                      <ul>
+                         <li><a href="gotoKeyFiscalIndicator">Key Fiscal Indicator</a></li>
+                        <li><a href="gotoAbstractReportOfStateExpenditure">Abstract Report of State Expenditure</a></li>
+                        <li><a href="gotoExpenditureReportByFunction">Abstract Report of State Expenditure by Grant</a></li>
+                           <li><a href="gotoAbstractReportOfStateReceipt">Abstract Report of State Receipt</a></li>
+                         <li><a href="gotoFlagshipWiseExpenditureReport">Flagship Scheme-wise Expenditure Report</a></li>
+                        <li><a href="gotoObjectHeadWiseExpenditureReport">Object Head Wise Expenditure Report</a></li>
+                      </ul>
+                    </li> -->
+          </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true' && (loginUser=='Executive Engineer' || loginUser=='Chief Engineer')"
+          class="drop-down">
+          <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Procurement
+          </a>
+          <ul style="width: 385%;" *ngIf="loginUser=='Executive Engineer' || loginUser=='Chief Engineer'">
+            <div class="row">
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Create New Blank Procurement</a></li>
+                <li><a class="dropdown-item">Create New NIT</a></li>
+                <li><a class="dropdown-item">Two - Envelope Bid Evaluation</a></li>
+                <li><a class="dropdown-item">Single - Envelope Bid Evaluation</a></li>
+                <li><a class="dropdown-item">Search NIT</a></li>
+              </div>
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Create New DPR For NIT</a></li>
+                <li><a class="dropdown-item">Create New Package For NIT</a></li>
+                <li><a class="dropdown-item">Generate LOA</a></li>
+                <li><a class="dropdown-item">Generate WO/NTP</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+          <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Teacher Activity
+          </a>
+          <ul style="width: 350%;">
+            <div class="row">
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Registration- View-Update</a></li>
+                <li><a class="dropdown-item">Detailed Profile Update</a></li>
+                <li><a class="dropdown-item">Update Service Status</a></li>
+                
+                <li><a class="dropdown-item">Teachers Full Month Report</a></li>
+              </div>
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Teacher MIS</a></li>
+
+                <li><a class="dropdown-item">Update Retiral Benefits</a></li>
+                <li><a class="dropdown-item">Teacher Device Logout</a></li>
+                <li><a class="dropdown-item">Assistance Teachers Verification Details</a></li>
+                <li><a class="dropdown-item">Teacher Monthly Attendance Report</a></li>
+
+              </div>
+            </div>
+          </ul>
+        </li>
+        
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+          <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Student Activity
+          </a>
+          <ul style="width: 250%;">
+            <div class="row">
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Child UDISE Mandatory Field</a></li>
+                <li><a class="dropdown-item">Student Progression</a></li>
+                <li><a class="dropdown-item">School Unfreeze Reportcard</a></li>
+                
+                <li><a class="dropdown-item">Student Assessment</a></li>
+              </div>
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Student Reportcard</a></li>
+
+                <li><a class="dropdown-item">Registration-View Updation</a></li>
+                <li><a class="dropdown-item">Bulk Student Edit</a></li>
+                <li><a class="dropdown-item">Student Upload</a></li>
+                <li><a class="dropdown-item">Student MIS</a></li>
+                <li><a class="dropdown-item">School Un-freeze MIS</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+          <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Scorecard-Scheduler
+          </a>
+          <ul style="width: 100%;">
+            <div class="row">
+              <div class="col-sm-12">
+                <li><a class="dropdown-item">View Scorecard Report</a></li>
+                <li><a class="dropdown-item">Student Cwsn Report</a></li>
+              </div>
+              
+            </div>
+          </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+          <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Leave Management
+          </a>
+          <ul style="width: 100%;">
+            <div class="row">
+              <div class="col-sm-12">
+                <li><a class="dropdown-item">Leave Types</a></li>
+                <li><a class="dropdown-item">Leave MIS</a></li>
+                <li><a class="dropdown-item">Leave Entitlement</a></li>
+                <li><a class="dropdown-item">Apply Leave</a></li>
+                <li><a class="dropdown-item">Leave Status</a></li>
+              </div>
+              
+            </div>
+          </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+          <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Mid-day Meal
+          </a>
+          <ul style="width: 300%;">
+            <div class="row">
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Manage MDM Menu</a></li>
+                <li><a class="dropdown-item">Daily Menu</a></li>
+                <li><a class="dropdown-item">Student Expenses</a></li>
+                
+                <li><a class="dropdown-item">Stock Report</a></li>
+              </div>
+              <div class="col-sm-6">
+                <li><a class="dropdown-item">Daily Consumption Report</a></li>
+
+                <li><a class="dropdown-item">Cook Details</a></li>
+                <li><a class="dropdown-item">MDM MIS</a></li>
+                <li><a class="dropdown-item">Update Opening Stock</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+
+
+        <li *ngIf="isLoggedIn=='true' && (loginUser=='Executive Engineer' || loginUser=='Chief Engineer')"
+          class="drop-down">
+          <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            ESS
+          </a>
+        </li>
+        <li *ngIf="isLoggedIn=='false'" class="drop-down">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Login
+          </a>
+
+          <!-- <ul>
+            <li _ngcontent-nbd-c53=""><a class="dropdown-item" [routerLink]="['login','Employee']">Employee</a></li>
+            <li><a class="dropdown-item" [routerLink]="['login','Contractor']">Contractor</a></li>
+            <li><a class="dropdown-item">External User</a></li>
+          </ul> -->
+          <ul>
+            <li _ngcontent-nbd-c53=""><a class="dropdown-item" (click)="onLogin()">Employee</a></li>
+            <li><a class="dropdown-item" (click)="onLogin()">Contractor</a></li>
+            <li><a class="dropdown-item" (click)="onLogin()">External User</a></li>
+          </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true'" class="drop-down" style="position: absolute;right: 100px;">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true" style="width: 30px">
+            <img src="../../../assets/images/profileLogo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul style="left: -50px;">
+            <li><a class="dropdown-item" href="javascript:void(0)">{{userName}}</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="javascript:void(0)" (click)="onLogOut()">Sign out</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <!-- <ul>
+            <li class="">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="#modules">Modules</a>
+            </li>
+            <li class="drop-down"><a href="javascript:void(0);">Dashboard</a>
+              <ul>
+                <li>
+                  <a href="https://finassam.in/budget_documents" target="blank">
+                    <i class="glyphicon glyphicon-chevron-right"></i> Assam Budget 2022-23
+                  </a>
+                </li>
+                <li class="drop-down">
+                  <a href="gotoInYearBudgetExecution" title="In-year Budget Execution Report">
+                    <i class="glyphicon glyphicon-chevron-right"></i> In-year Budget Execution
+                  </a>
+                  <ul>
+                     <li><a href="gotoKeyFiscalIndicator">Key Fiscal Indicator</a></li>
+                    <li><a href="gotoAbstractReportOfStateExpenditure">Abstract Report of State Expenditure</a></li>
+                    <li><a href="gotoExpenditureReportByFunction">Abstract Report of State Expenditure by Grant</a></li>
+                       <li><a href="gotoAbstractReportOfStateReceipt">Abstract Report of State Receipt</a></li>
+                     <li><a href="gotoFlagshipWiseExpenditureReport">Flagship Scheme-wise Expenditure Report</a></li>
+                    <li><a href="gotoObjectHeadWiseExpenditureReport">Object Head Wise Expenditure Report</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="drop-down"><a href="javascript:void(0);">Login</a>
+              <ul>
+                <li>
+                  <a href="gotoUserLogin" title="Go To User Login">
+                    <i class="glyphicon glyphicon-chevron-right"></i>User Login 
+                  </a>
+                </li>
+                <li>
+                  <a href="gotoEmpLogin" title="Go To Employee Login">
+                    <i class="glyphicon glyphicon-chevron-right"></i>Employee Login 
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul> -->
+    </nav>
+    <!-- </div> -->
+
+    <!-- .nav-menu -->
+
+  </div>
+
+
+
+</header>

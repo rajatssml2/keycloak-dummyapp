@@ -7,7 +7,7 @@ export const environment = {
   tenantId: 'pg',
   production: false,
   keycloak: {
-    issuer: "http://localhost:8080/",
+    issuer: "http://localhost:8189/",
     // "http://localhost:8080/realms/enhanced-digit",
     redirectUri: "http://localhost:4300/dashboard",
     logoutUri: "http://localhost:4300",
